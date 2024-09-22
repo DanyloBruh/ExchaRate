@@ -1,0 +1,72 @@
+.header {
+  height: 100px;
+  max-width: 1390px;
+  padding: 0 40px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__logo {
+  display: flex;
+  align-items: center;
+}
+
+.header__img {
+  height: 50px;
+  width: 50px;
+}
+
+.header__title {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: bold;
+  font-style: normal;
+  font-size: 27px;
+  color: #0062b0;
+}
+
+.exchange-rate {
+  display: flex;
+  gap: 20px;
+}
+
+.exchange-rate__item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  > img {
+    height: 30px;
+  }
+  > span {
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 20px;
+    color: #0062b0;
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    padding: 0 15px;
+  }
+  .exchange-rate {
+    flex-direction: column;
+  }
+  .header-title {
+    font-size: 18px;
+  }
+  .exchange-rate__item {
+    > span {
+      font-size: 16px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .header__title {
+    font-size: 24px;
+  }
+}

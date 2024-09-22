@@ -1,0 +1,8 @@
+.currency-option {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.currency-option__img {
+  height: 25px;
+}

@@ -1,0 +1,46 @@
+.field {
+  position: relative;
+}
+
+.field__input {
+  height: 60px;
+  width: calc(100% - 20px);
+  background-color: #f1f2f5;
+  border: 0;
+  padding: 0 10px;
+  outline: none;
+  font-size: 1.5em;
+  transition: padding 0.3s 0.2s ease;
+  font-family: "Montserrat", sans-serif;
+}
+
+.field__input:focus + .line:after {
+  transform: scaleX(1);
+}
+
+.field__input:hover {
+  background: rgba(34, 34, 34, 0.13);
+  box-shadow: inset 0 -1px 0 rgba(#000, 0.5);
+}
+
+.field__line {
+  width: 100%;
+  height: 1.5px;
+  position: absolute;
+  bottom: 0px;
+  background: #bdc3c7;
+}
+
+.field__line::after {
+  content: " ";
+  position: absolute;
+  float: right;
+  width: 100%;
+  height: 1px;
+
+  transform: scalex(0);
+  transition: transform 0.3s ease;
+
+  background: #0062b0;
+}
+
